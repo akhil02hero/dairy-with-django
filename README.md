@@ -1,0 +1,2 @@
+# Dairy app using Django
+ 

@@ -1,0 +1,30 @@
+{% load static %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css'%}" type="text/css">
+    <title>Dairy</title>
+</head>
+
+<body>
+    <div id="dairy_entry">
+        <form action="add" method="GET">{% csrf_token %} Date:
+            <input type="Date" name="date"><br> Title:
+            <input type="text" name="title" placeholder="Your Title ">
+            <br>
+            <br>
+            <textarea type="text" name="story" placeholder="Story of the day"></textarea><br>
+            <button class="btn" style="vertical-align:middle" type="submit" name="Submit" value="Submit"><span>Submit </span></button>
+            <button id="btn2" style="vertical-align:middle" type="reset"><img src="{% static 'img2.png' %}"></button>
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

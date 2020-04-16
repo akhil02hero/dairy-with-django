@@ -1,0 +1,28 @@
+body {
+    background-color: lightgreen;
+    color: violet;
+}
+
+div {
+    margin: 0 20%;
+    padding: 40px;
+    width: 900px;
+    height: auto;
+    background-color: black;
+    color: rgb(255, 145, 0);
+    font-size: large;
+    border-radius: 5px;
+    font-family: cursive;
+}
+
+h3 {
+    color: violet;
+    font-size: large;
+    font-family: cursive;
+}
+
+p {
+    color: violet;
+    font-size: x-large;
+    font-family: cursive;
+}

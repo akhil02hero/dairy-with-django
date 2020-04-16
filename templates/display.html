@@ -1,0 +1,31 @@
+{% block content %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index2.css'%}" type="text/css">
+    <title>Display</title>
+</head>
+
+<body>
+    {% for di in dis %}
+    <div>
+
+        <button><img src="{% static 'img3.png' %}"></button>
+        <br> Date:
+        <h3>{{di.date}}</h1>
+            Title:
+            <h3>{{di.title}}</h1>
+                Story of the day:
+                <p>{{di.story}}</p>
+    </div>
+    <br>
+    <br> {% endfor %}
+
+
+</body>
+
+</html>
+{% endblock %}
